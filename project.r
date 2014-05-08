@@ -14,7 +14,7 @@ uniformdistrib <- function(n)
 
     # output the histogram
     pdf(paste("uniform", n, ".pdf", sep = ""))
-    hist(list, freq=TRUE)
+    hist(list, freq=TRUE, main="Histogram of Uniform Distribution", xlab="Sample Means")
 }
 
 uniformdistrib(5)
@@ -36,7 +36,7 @@ weibulldistrib <- function(n)
 
     # output the histogram
     pdf(paste("weibull", n, ".pdf", sep = ""))
-    hist(list, freq=TRUE)
+    hist(list, freq=TRUE, main="Histogram of Weibull Distribution", xlab="Sample Means")
 }
 
 weibulldistrib(5)
@@ -58,7 +58,7 @@ stdbetadistrib <- function(n)
 
     # output the histogram
     pdf(paste("standardbeta", n, ".pdf", sep = ""))
-    hist(list, freq=TRUE)
+    hist(list, freq=TRUE, main="Histogram of Standard Beta Distribution", xlab="Sample Means")
 }
 
 stdbetadistrib(5)
@@ -81,7 +81,7 @@ lognormaldistrib <- function(n)
 
     # output the histogram
     pdf(paste("lognormal", n, ".pdf", sep = ""))
-    hist(list, freq=TRUE)
+    hist(list, freq=TRUE, main="Histogram of Log Normal Distribution", xlab="Sample Means")
 }
 
 lognormaldistrib(5)
